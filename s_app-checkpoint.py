@@ -24,6 +24,13 @@ for f in top_features:
 if st.button("Predict Player Rating"):
     player_rating = predict_rating(player_features)
     st.write(f"The predicted rating of the player is: {player_rating:.4f}")
+
+st.success(player_features)
+
+if __name__ == '__main__':
+    main()
+
+streamlit run s_app.py
     
 
 
